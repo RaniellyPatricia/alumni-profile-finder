@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Arquivos de configuração privada
+.env
+
+# Dados reais do projeto
+data/raw/*
+data/processed/*
+
+# Mantém as pastas no GitHub, mas sem subir os dados
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Saídas locais
+outputs/*
+logs/*
+
+# Planilhas e CSVs reais
+*.xlsx
+*.xls
