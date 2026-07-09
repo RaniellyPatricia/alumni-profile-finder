@@ -235,3 +235,11 @@ logs/*
 # Planilhas e CSVs reais
 *.xlsx
 *.xls
+
+# Dados reais e saídas locais
+data/raw/*
+data/processed/*
+perfis_extraidos/*
+conteudo.txt
+!data/raw/.gitkeep
+!data/processed/.gitkeep
