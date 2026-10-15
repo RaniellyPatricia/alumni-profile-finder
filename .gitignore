@@ -217,18 +217,18 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# Arquivos de configuração privada
+# Arquivos de configuraÃ§Ã£o privada
 .env
 
 # Dados reais do projeto
 data/raw/*
 data/processed/*
 
-# Mantém as pastas no GitHub, mas sem subir os dados
+# MantÃ©m as pastas no GitHub, mas sem subir os dados
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Saídas locais
+# SaÃ­das locais
 outputs/*
 logs/*
 
@@ -236,10 +236,15 @@ logs/*
 *.xlsx
 *.xls
 
-# Dados reais e sa�das locais
+# Dados reais e saídas locais
 data/raw/*
 data/processed/*
 perfis_extraidos/*
 conteudo.txt
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Google OAuth - arquivos privados locais
+config/credentials.json
+config/token.json
+client_secret_*.json
