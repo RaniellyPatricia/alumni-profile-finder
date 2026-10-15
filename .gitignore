@@ -236,10 +236,51 @@ logs/*
 *.xlsx
 *.xls
 
-# Dados reais e saídas locais
+# Dados reais e saï¿½das locais
 data/raw/*
 data/processed/*
 perfis_extraidos/*
 conteudo.txt
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Google OAuth - credenciais privadas
+config/credentials.json
+config/token.json
+client_secret_*.json
+
+# Evitar publicacao acidental de bases de dados
+*.csv
+*.parquet
+*.sqlite
+*.db
+# ==========================================
+# PROTECAO DE DADOS - ALUMNI PROFILE FINDER
+# ==========================================
+
+# Perfil local do Chrome - cookies e sessoes
+chrome-debug-profile/
+
+# Credenciais privadas
+config/
+credentials.json
+token.json
+client_secret_*.json
+
+# Bases de dados pessoais
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.sqlite
+*.db
+
+# Backups e arquivos de teste locais
+*_backup_*.py
+teste_selenium.py
+
+# Logs
+*.log
+
+# Driver local do Selenium
+drivers/chromedriver.exe
